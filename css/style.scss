@@ -5,10 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    color: #ffff !important;
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #121212;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -17,7 +18,7 @@ body {
     flex-direction: column;
     }
     .menu-personal-configs {
-        background-color: #E0E0E0;
+        background-color: #1f1f1f;
         padding: 0px 10px;
         box-shadow: 0px;
          a {
@@ -28,10 +29,14 @@ body {
          }
     }
 
+    #mobile-demo {
+        background-color:#1f1f1f !important;
+    }
+
     .dropdown-arrow {
         width: 200px;
         height: 150px;
-        background-color: #E0E0E0;
+        background-color: #1f1f1f;
         position: absolute;
         align-self: flex-end;
         margin-top: 65px;
@@ -61,7 +66,7 @@ body {
         opacity: 1;
     }
     .side-products {
-        background-color: #E0E0E0;
+        background-color: #1f1f1f;
         width: 20em;
         height: 92vh;
         align-self: flex-end;
@@ -100,36 +105,69 @@ body {
         justify-content: center;
         .card {
             width: 17em;
-            height: 45vh;
-            background-color: #E0E0E0;
+            height: 40vh;
+            background-color: #1f1f1f;
             margin: 15px;
-            border-radius: 15px;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
+            transition: all .5s;
             &:hover .buy {
                 display: block;
             }
 
-            &:hover img {
-                margin-top: -30px;
-            }
-            img {
-                width: 25em;
+            &:hover {
+                height: 50vh;
                 transition: all .5s;
             }
-
-            p {
-                font-size: 2em;
+            img {
+                width: 17.05em;
+                transition: all .5s;
+                z-index: 1;
             }
+
+            .product-name {
+                font-size: 1.5em;
+                position: relative;
+                margin: auto;
+            }
+            .white-bg-price {
+                margin: auto;
+                background-color: #ffff;
+                border-radius: 15px;
+                .price {
+                    font-size: 1.2em; 
+                    color: black !important;
+                    text-align: center;
+                    padding: 10px;
+                }
+            }
+            
 
             .buy {
                 display: none;
-                transition: all .5s;
+                position: absolute;
+                bottom: 30px;
+                .botton-card {
+                    display: flex;
+                }
             }
         }
     }
 
 }
+
+@media screen and (max-width:1024px){
+    #card {
+        height: 50vh;
+        &:hover {
+            height: 65vh;
+        }
+    }
+    
+}
+
+
+
 
