@@ -45,6 +45,20 @@ body .menu-personal-configs .logo-bold {
   font-weight: 700;
 }
 
+body .menu-personal-configs .search {
+  border: none;
+  background-color: #121212;
+  border-radius: 25px;
+  padding-left: 9px;
+  height: 35px;
+}
+
+body .menu-personal-configs .search:focus {
+  border: 2px solid #808080 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 body #mobile-demo {
   background-color: #1f1f1f !important;
 }
@@ -109,6 +123,7 @@ body .side-products {
   transition: all .3s;
   top: 65px;
   z-index: 22222;
+  overflow: scroll;
 }
 
 body .side-products .action-buttons {
@@ -218,6 +233,35 @@ body .products .card .buy .botton-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+body .sidenav .mobile-search-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sidenav .mobile-search-container .search {
+  border: none;
+  background-color: #121212;
+  border-radius: 25px;
+  padding-left: 2px;
+  height: 30px;
+  width: 65%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+body .sidenav .mobile-search-container .search:focus {
+  border: 2px solid #808080 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media screen and (max-width: 1024px) {

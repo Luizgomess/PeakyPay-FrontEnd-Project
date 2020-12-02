@@ -27,6 +27,18 @@ body {
          .logo-bold {
              font-weight: 700;
          }
+
+         .search {
+             border: none;
+             background-color: #121212;
+             border-radius: 25px;
+             padding-left: 9px;
+             height: 35px;
+             &:focus {
+                border: 2px solid #808080 !important;
+                box-shadow: none;
+             }
+         }
     }
 
     #mobile-demo {
@@ -75,6 +87,7 @@ body {
         transition: all .3s;
         top: 65px;
         z-index: 22222;
+        overflow: scroll;
         .action-buttons {
             display: flex;
             flex-direction: column;
@@ -152,6 +165,29 @@ body {
                 .botton-card {
                     display: flex;
                 }
+            }
+        }
+    }
+
+    .sidenav {
+        .mobile-search-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .search {
+                border: none;
+                 background-color: #121212;
+                 border-radius: 25px;
+                 padding-left: 2px;
+                 height: 30px;
+                 width: 65%;
+                 padding-left: 10%;
+                 padding-right: 10%;
+                 &:focus {
+                    border: 2px solid #808080 !important;
+                    box-shadow: none;
+                 }
             }
         }
     }
