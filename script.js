@@ -15,19 +15,3 @@ function selectList() {
   }
   
   selectList()
-
-  function sideProductList() {
-    const sideList = document.querySelector('#side-list');
-    const market = document.querySelector('#market')
-    const closeModal = document.querySelector('.products')
-    market.addEventListener("click", () => {
-        sideList.classList.toggle('view')
-        closeModal.addEventListener("click", () => {
-          
-          sideList.classList.remove('view')
-        })
-        
-    })
-  }
-  
-  sideProductList()

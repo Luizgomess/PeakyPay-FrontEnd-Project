@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: #eef0f1;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -48,7 +48,7 @@ body {
     .dropdown-arrow {
         width: 200px;
         height: 150px;
-        background-color: #1f1f1f;
+        background-color: #121212;
         position: absolute;
         align-self: flex-end;
         margin-top: 65px;
@@ -77,34 +77,10 @@ body {
         display: block;
         opacity: 1;
     }
-    .side-products {
-        background-color: #1f1f1f;
-        width: 20em;
-        height: 92vh;
-        align-self: flex-end;
-        display: none;
-        position: absolute;
-        transition: all .3s;
-        top: 65px;
-        z-index: 22222;
-        overflow: scroll;
-        .action-buttons {
-            display: flex;
-            flex-direction: column;
-            padding: 10px;
-            margin-top: 195%;
-            button {
-                margin: 3px;
-            }
-        }
-    }
 
-    .view {
-        display: block;
-    }
 
     @media (max-width: 992px) {
-        .view, .on {
+        .on {
             display: none;
         }
 
@@ -118,8 +94,8 @@ body {
         justify-content: center;
         .card {
             width: 17em;
-            height: 40vh;
-            background-color: #1f1f1f;
+            height: 300px;
+            background: #121212;
             margin: 15px;
             display: flex;
             align-items: center;
@@ -131,7 +107,7 @@ body {
             }
 
             &:hover {
-                height: 50vh;
+                height: 440px;
                 transition: all .5s;
             }
             img {
@@ -147,8 +123,13 @@ body {
             }
             .white-bg-price {
                 margin: auto;
-                background-color: #ffff;
-                border-radius: 15px;
+                background-color: white;
+                .older-price {
+                    color: white;
+                    font-size: 1em;
+                    padding: 5px;
+                    background-color: #808080;
+                }
                 .price {
                     font-size: 1.2em; 
                     color: black !important;
@@ -194,15 +175,7 @@ body {
 
 }
 
-@media screen and (max-width:1024px){
-    #card {
-        height: 50vh;
-        &:hover {
-            height: 65vh;
-        }
-    }
-    
-}
+
 
 
 
