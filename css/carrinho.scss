@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    .carrinho {
+        width: 100%;
+        height: 50vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-bottom: #222222;
+        .carrinho-item {
+            width: 100%;
+            height: 150px;
+            background-color: black;
+            margin: 10px auto;
+            display: flex;
+            .icon {
+                width: 150px;
+                height: 150px;
+                border: 2px solid black;
+            }
+            .icon-data {
+                margin-left: 10px;
+                #product-quant { 
+                    border: 2px solid;
+                    background-color: white;
+                    width: 50px;
+                    height: 20px;
+                    color: #323232 !important;
+                    outline: none;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    .btn-confirm {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        .confirm,.cancel {
+            height: 50px;
+            color: black !important;
+            font-size: 20pt;
+            padding: 5px;
+        }
+    }
+}
+
