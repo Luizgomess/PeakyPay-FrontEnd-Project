@@ -10,7 +10,7 @@ body {
 
 body .carrinho {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   overflow-y: scroll;
   overflow-x: hidden;
   border-bottom: #222222;
@@ -19,7 +19,7 @@ body .carrinho {
 body .carrinho .carrinho-item {
   width: 100%;
   height: 150px;
-  background-color: black;
+  background-color: #1f1f1f;
   margin: 10px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,11 +29,13 @@ body .carrinho .carrinho-item {
 body .carrinho .carrinho-item .icon {
   width: 150px;
   height: 150px;
-  border: 2px solid black;
 }
 
 body .carrinho .carrinho-item .icon-data {
   margin-left: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 body .carrinho .carrinho-item .icon-data #product-quant {
@@ -46,18 +48,50 @@ body .carrinho .carrinho-item .icon-data #product-quant {
   padding: 5px;
 }
 
+body .carrinho::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+body .carrinho::-webkit-scrollbar {
+  width: 10px;
+  background: #f4f4f4;
+}
+
+body .carrinho::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 60px;
+}
+
 body .btn-confirm {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  color: black;
+}
+
+body .btn-confirm #total {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .btn-confirm #total #totalPrice {
+  color: black !important;
+  margin: 5px;
+  font-size: 2.1rem;
 }
 
 body .btn-confirm .confirm, body .btn-confirm .cancel {
@@ -65,5 +99,25 @@ body .btn-confirm .confirm, body .btn-confirm .cancel {
   color: black !important;
   font-size: 20pt;
   padding: 5px;
+  margin: 5px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .btn-confirm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #total {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=carrinho.css.map */
