@@ -32,14 +32,14 @@ body form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #E0E0E0;
-  width: 25rem;
-  height: 130vh;
+  background-color: #1f1f1f;
+  width: 400px;
+  height: 580px;
   margin: 50px;
 }
 
 body form h1 {
-  color: #323232;
+  color: #e0e0ee;
 }
 
 body form p {
@@ -56,7 +56,7 @@ body form p input {
 }
 
 body form p input:focus {
-  border: 2px solid #323232;
+  border: 2px solid #e0e0ee;
 }
 
 body form p button {
@@ -66,7 +66,7 @@ body form p button {
   font-size: 15pt;
   font-weight: bold;
   color: #323232;
-  border: 2px solid #323232;
+  border: 2px solid #e0e0ee;
   cursor: pointer;
 }
 

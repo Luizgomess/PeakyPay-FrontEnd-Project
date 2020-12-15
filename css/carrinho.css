@@ -18,7 +18,7 @@ body .carrinho {
 
 body .carrinho .carrinho-item {
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-color: #1f1f1f;
   margin: 10px auto;
   display: -webkit-box;
@@ -96,7 +96,7 @@ body .btn-confirm #total #totalPrice {
 
 body .btn-confirm .confirm, body .btn-confirm .cancel {
   height: 50px;
-  color: black !important;
+  color: white;
   font-size: 20pt;
   padding: 5px;
   margin: 5px;

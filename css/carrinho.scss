@@ -9,7 +9,7 @@ body {
         border-bottom: #222222;
         .carrinho-item {
             width: 100%;
-            height: 150px;
+            height: 200px;
             background-color: #1f1f1f;
             margin: 10px auto;
             display: flex;
@@ -64,7 +64,7 @@ body {
         }
         .confirm,.cancel {
             height: 50px;
-            color: black !important;
+            color: white;
             font-size: 20pt;
             padding: 5px;
             margin: 5px;
@@ -84,5 +84,6 @@ body {
     #total {
         text-align: center;
     }
+ 
 }
 
