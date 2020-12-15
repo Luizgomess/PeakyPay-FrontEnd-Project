@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body form {
+  margin-top: 100px;
+  width: 500px;
+  height: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #1f1f1f;
+}
+
+body form h1 {
+  color: #e0e0e0;
+  position: relative;
+  top: -20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body form .endereco-input {
+  width: 350px;
+  height: 45px;
+  margin: 5px;
+  outline: none;
+  border: none;
+  font-size: 15pt;
+  padding: 15px;
+}
+
+body form button {
+  width: 200px;
+  height: 45px;
+  margin-top: 10px;
+  font-size: 20pt;
+  border: none;
+  outline: none;
+}
+
+body form button:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  body form {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=endereco.css.map */
